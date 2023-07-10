@@ -1,0 +1,284 @@
+
+----  UNOS PODATAKA  ----
+ 
+-- PRODAVAONICA -- [3]
+
+if not exists(select * from Prodavaonica)
+begin 
+	insert into Prodavaonica (Ime, Adresa, Grad, UShopingCentru)
+	values ('suster', 'Ilica 252', 'Zagreb', 'Y centar')
+end
+
+if not exists(select * from Prodavaonica)
+begin 
+	insert into Prodavaonica (Ime, Adresa, Grad, UShopingCentru)
+	values ('buzzzz', 'Vojnikova 10', 'Sibenik', 'Mall Avanue')
+end
+
+if not exists(select * from Prodavaonica)
+begin 
+	insert into Prodavaonica (Ime, Adresa, Grad, UShopingCentru)
+	values ('ShowBeeDuu', 'Dubrovacka ulica 104', 'Zadar', 'Gallery Centar')
+end
+
+
+
+-- PRODAVAC -- [4]
+
+if not exists(select * from Prodavac)
+begin 
+	insert into prodavac (Ime, Prezime, GodineStaza, ProdavaonicaID)
+	values ('Luka', 'Modric', 22, 2)
+end
+
+if not exists(select * from Prodavac)
+begin 
+	insert into prodavac (Ime, Prezime, GodineStaza, ProdavaonicaID)
+	values ('Janica', 'Kostelic', 13, 1)
+end
+
+if not exists(select * from Prodavac)
+begin 
+	insert into prodavac (Ime, Prezime, GodineStaza, ProdavaonicaID)
+	values ('Domagoj', 'Vida', 12, 1)
+end
+
+if not exists(select * from Prodavac)
+begin 
+	insert into prodavac (Ime, Prezime, GodineStaza, ProdavaonicaID)
+	values ('Sandra', 'Bagaric', 4, 3)
+end
+
+
+
+-- KUPAC -- [6]
+
+if not exists(select * from Kupac)
+begin 
+	insert into Kupac (Ime, Prezime, OIB, Email, brojTelefona, NazivKartice)
+	values ('Miljenko', 'Lipic', '1234567891013', 'Miljac@gmail.com', '091234456', 'Mastercard')
+end
+
+if not exists(select * from Kupac)
+begin 
+	insert into Kupac (Ime, Prezime, OIB, Email, brojTelefona, NazivKartice)
+	values ('Harry', 'Styles', '1254267894512', 'Hstyles@oned.com', '091984286', 'ErsteBank')
+end
+
+if not exists(select * from Kupac)
+begin 
+	insert into Kupac (Ime, Prezime, OIB, Email, brojTelefona, NazivKartice)
+	values ('Liam', 'Payne', '3134547892811', 'Lpeynn@twodi.de', '095293456', 'Rbica')
+end
+
+if not exists(select * from Kupac)
+begin 
+	insert into Kupac (Ime, Prezime, OIB, Email, brojTelefona, NazivKartice)
+	values ('Louis', 'Tomilson', '0144557892921', 'ltomilison@onedy.hr', '098297722', 'Visa')
+end
+
+if not exists(select * from Kupac)
+begin 
+	insert into Kupac (Ime, Prezime, OIB, Email, brojTelefona, NazivKartice)
+	values ('Zayn', 'Malik', '0244557892921', 'ltomilison@onedy.hr', '098297722', 'Rbica')
+end
+
+if not exists(select * from Kupac)
+begin 
+	insert into Kupac (Ime, Prezime, OIB, Email, brojTelefona, NazivKartice)
+	values ('Niall', 'Horan', '3242257876911', 'Nialllrog@oned.fr', '091266722', 'Visa')
+end
+
+if not exists(select * from Kupac)
+begin 
+	insert into Kupac (Ime, Prezime, OIB, Email, brojTelefona, NazivKartice)
+	values ('Justin', 'Papar', '0324554892121', 'jb@papar.com', '098291732', 'Visa')
+end
+
+
+-- PAR CIPELA -- [22]
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Nike', 'AirDjordan', 43, 'zeleno-bijela', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Nike', 'Air Max 720', 36, 'crna', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Nike', 'Air force 1', 39, 'roza sa sjajem', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Fila', '34', 37, 'white', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Vans', 'Old Skool', 40, 'original', 'blablablabla')
+end
+	
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Vans', 'Old Skool Visoke', 41, 'checkered', 'blablablabla')
+end
+	
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('YSL', 'Stileto', 38, 'original', 'blablablabla')
+end
+	
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Guess', 'high heel platform', 40, 'crvena', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Converse', 'chuck 70', 41, 'bijela', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Converse', 'chuck 70 visoke', 42, 'crne sa srcekima', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Nike', 'air max 270', 37, '', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('New Balance', '574', 40, 'brown', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Skechers', 'uno strand on air', 39, 'zuta', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Skechers', 'uno strand on air', 38, 'tirkizna', 'blablablabla')
+end
+
+--14 + 8
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Nike', 'dunkie', 49, 'zlatna', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Nike', 'blazers', 39, 'bijela', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Adidas', 'samba', 41, 'zuta', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Adidas', 'stan smith', 41, 'bijela sa plavim', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Mcqueen', 'skupi model', 42, 'crvene', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Valentino', 'stikle', 38, 'crvene', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Timberland', 'boots', 43, 'original', 'blablablabla')
+end
+
+if not exists(select * from ParCipela)
+begin 
+	insert into ParCipela (Marka, Model, Broj, Boja, OpisProizvoda)
+	values ('Adidas', 'superstar', 38, 'plavo-narancaste', 'blablablabla')
+end
+
+
+-- RACUN -- [8]
+
+if not exists(select * from Racun)
+begin 
+	insert into Racun (cijena, KupacID, ProdavacID, ParCipelaID, popust, datumIzdavanja)
+	values (1005, 1, 2, 3, 15, '20220930')
+end
+
+if not exists(select * from Racun)
+begin 
+	insert into Racun (cijena, KupacID, ProdavacID, ParCipelaID, popust, datumIzdavanja)
+	values (699, 2, 1, 1, 25, '20230920')
+end
+
+if not exists(select * from Racun)
+begin 
+	insert into Racun (cijena, KupacID, ProdavacID, ParCipelaID, popust, datumIzdavanja)
+	values (452, 3, 2, 3, 10, '20211005')
+end
+
+if not exists(select * from Racun)
+begin 
+	insert into Racun (cijena, KupacID, ProdavacID, ParCipelaID, popust, datumIzdavanja)
+	values (989, 4, 3, 4, 25, '20231103')
+end
+
+if not exists(select * from Racun)
+begin 
+	insert into Racun (cijena, KupacID, ProdavacID, ParCipelaID, popust, datumIzdavanja)
+	values (320, 5, 1, 5, 15, '20220229')
+end
+
+if not exists(select * from Racun)
+begin 
+	insert into Racun (cijena, KupacID, ProdavacID, ParCipelaID, popust, datumIzdavanja)
+	values (10, 6, 2, 6, 5, '20210404')
+end
+
+if not exists(select * from Racun)
+begin 
+	insert into Racun (cijena, KupacID, ProdavacID, ParCipelaID, popust, datumIzdavanja)
+	values (59, 2, 2, 7, 20, '20210723')
+end
+
+if not exists(select * from Racun)
+begin 
+	insert into Racun (cijena, KupacID, ProdavacID, ParCipelaID, popust, datumIzdavanja)
+	values (565, 3, 1, 8, 15, '20201223')
+end
